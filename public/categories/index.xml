@@ -1,0 +1,32 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - 分类 - 小陈の博客</title>
+        <link>http://localhost:1313/categories/</link>
+        <description>Categories - 分类 - 小陈の博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
+            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>记录笔记</title>
+    <link>http://localhost:1313/categories/%E8%AE%B0%E5%BD%95%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/categories/%E8%AE%B0%E5%BD%95%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Emoji</title>
+    <link>http://localhost:1313/categories/emoji/</link>
+    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/categories/emoji/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>学习笔记</title>
+    <link>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Theme - 标签 - 小陈の博客</title>
+        <link>http://localhost:1313/tags/theme/</link>
+        <description>Theme - 标签 - 小陈の博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
+            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/theme/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo Loveit</title>
+    <link>http://localhost:1313/hugo-loveit/</link>
+    <pubDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/hugo-loveit/</guid>
+    <description><![CDATA[<h2 id="安装-hugo">安装 hugo</h2>
+<p><code>scoop install hugo-extended</code></p>]]></description>
+</item>
+</channel>
+</rss>

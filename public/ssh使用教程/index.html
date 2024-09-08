@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>ssh 使用教程 - 小陈の博客</title><meta name="Description" content="学习笔记博客"><meta property="og:url" content="http://localhost:1313/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">
+  <meta property="og:site_name" content="小陈の博客">
+  <meta property="og:title" content="ssh 使用教程">
+  <meta property="og:description" content="SSH 密码登录 ssh root@172.16.124.24 #用户名@主机名">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-06T21:48:59+08:00">
+    <meta property="article:modified_time" content="2024-09-06T21:48:59+08:00">
+    <meta property="article:tag" content="Ssh">
+    <meta property="article:tag" content="操作方法">
+    <meta property="og:image" content="http://localhost:1313/avatar.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/avatar.png">
+  <meta name="twitter:title" content="ssh 使用教程">
+  <meta name="twitter:description" content="SSH 密码登录 ssh root@172.16.124.24 #用户名@主机名">
+      <meta name="twitter:site" content="@chenpw">
+<meta name="application-name" content="Small chen">
+<meta name="apple-mobile-web-app-title" content="Small chen"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" /><link rel="prev" href="http://localhost:1313/typora%E7%AC%94%E8%AE%B0%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" /><link rel="next" href="http://localhost:1313/py%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssh 使用教程",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/"
+        },"genre": "posts","keywords": "ssh, 操作方法","wordcount":  334 ,
+        "url": "http:\/\/localhost:1313\/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/","datePublished": "2024-09-06T21:48:59+08:00","dateModified": "2024-09-06T21:48:59+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Small chen"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="小陈の博客"><span class="header-title-pre"><i class='fa-solid fa-rocket' style='color: #74c0fc;'></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"><i class='fa-duotone fa-solid fa-newspaper'></i> 文章 </a><a class="menu-item" href="/tags/"><i class='fa-duotone fa-solid fa-tags'></i> 标签 </a><a class="menu-item" href="/categories/"><i class='fa-duotone fa-solid fa-layer-group'></i> 分类 </a><a class="menu-item" href="/about/"><i class='fa-duotone fa-solid fa-address-card'></i> 关于 </a><a class="menu-item" href="https://github.com/chenpw721/" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github-alt'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="小陈の博客"><span class="header-title-pre"><i class='fa-solid fa-rocket' style='color: #74c0fc;'></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title=""><i class='fa-duotone fa-solid fa-newspaper'></i>文章</a><a class="menu-item" href="/tags/" title=""><i class='fa-duotone fa-solid fa-tags'></i>标签</a><a class="menu-item" href="/categories/" title=""><i class='fa-duotone fa-solid fa-layer-group'></i>分类</a><a class="menu-item" href="/about/" title=""><i class='fa-duotone fa-solid fa-address-card'></i>关于</a><a class="menu-item" href="https://github.com/chenpw721/" title="" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github-alt'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssh 使用教程</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Small chen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E8%AE%B0%E5%BD%95%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>记录笔记</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-09-06">2024-09-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 334 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#ssh-密码登录">SSH 密码登录</a></li>
+    <li><a href="#ssh-免密登录">SSH 免密登录</a></li>
+    <li><a href="#github-ssh-下载-密钥生成">github SSH 下载 密钥生成</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="ssh-密码登录">SSH 密码登录</h2>
+<p><code>ssh root@172.16.124.24 #用户名@主机名</code></p>
+<h2 id="ssh-免密登录">SSH 免密登录</h2>
+<p><code>ssh-keygen -t rsa # 生成密钥</code>
+<code>scp C:\Users\Admin\.ssh\id_rsa.pub root@172.16.124.24:/root/.ssh/id_rsa.pub.windows # 把密钥文件拷贝到linux服务器上的.ssh文件下并改名</code></p>
+<blockquote>
+<p>接下来进入 linux 服务器把密钥文件的内容复制到 anthorized_keys 文件里</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh root@172.16.124.24 
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/.ssh
+</span></span><span class="line"><span class="cl">cat id_rsa.pub.windows &gt;&gt; authorized_keys
+</span></span><span class="line"><span class="cl">接下来登录linux服务器就不需要输入密码了
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ssh root@172.16.124.24
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="github-ssh-下载-密钥生成">github SSH 下载 密钥生成</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#linux没有的话下载openssh</span>
+</span></span><span class="line"><span class="cl">ssh-keygen -t ed25519 -C <span class="s2">&#34;your_name@email.com&#34;</span>
+</span></span><span class="line"><span class="cl">cat ~/.ssh/id_ed25519.pub
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>请在 git bash 或 powershell 中操作</p>
+<p>登录 github，点击头像，点击设置，找到 SSH and GPG keys 选项，点击 SSH keys 右边的 New SSH key 按钮，标题给个恰当的密钥名字，把 cat ~/.ssh/id_ed25519.pub 的输出全部复制进 Key 里面，单击 Add SSH key，接着输入你的 github 登录密码</p>
+<p><code>ssh -T git@github.com #在终端中输入</code></p>
+<p>末尾出现下面的代表成功</p>
+<p>Hi your_name! You&rsquo;ve successfully authenticated, but GitHub does not provide shell access.</p>
+<p>可以使用 ssh 下载方式了</p>
+<p><code>git clone --depth=1 git@github.com:ryanoasis/nerd-fonts.git</code></p>
+<p>&ndash;depth=1: 只下载最近一次的提交版本，可以避免把所有的历史提交记录下载下来</p>
+</blockquote></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-09-06</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://localhost:1313/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-title="ssh 使用教程" data-via="chenpw" data-hashtags="ssh,操作方法"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://localhost:1313/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-hashtag="ssh"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-title="ssh 使用教程"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://localhost:1313/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-title="ssh 使用教程"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://localhost:1313/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-title="ssh 使用教程" data-ralateuid="7891561431"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssh/">Ssh</a>,&nbsp;<a href="/tags/%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/">操作方法</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/typora%E7%AC%94%E8%AE%B0%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="prev" rel="prev" title="typora 笔记使用教程"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>typora 笔记使用教程</a>
+            <a href="/py%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="next" rel="next" title="py 学习笔记">py 学习笔记<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.134.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Small chen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/index.umd.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":72},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"id-1":" My Blog","id-2":" My Blog"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
