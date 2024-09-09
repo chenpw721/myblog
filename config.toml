@@ -1,4 +1,4 @@
-baseURL = "https://chenpw721.github.io/"
+baseURL = "https://mynewworld.pages.dev/"
 
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
@@ -44,6 +44,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 [menu]
   [[menu.main]]
     weight = 1
+    identifier = "Home"
+    pre = "<i class='fa-duotone fa-solid fa-house-chimney-user'></i>"
+    post = ""
+    name = "首页"
+    url = "/"
+    title = ""
+  [[menu.main]]
+    weight = 2
     identifier = "posts"
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息，例如图标
     pre = "<i class='fa-duotone fa-solid fa-newspaper'></i>"
@@ -54,7 +62,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = ""
   [[menu.main]]
-    weight = 2
+    weight = 3
     identifier = "tags"
     pre = "<i class='fa-duotone fa-solid fa-tags'></i>"
     post = ""
@@ -62,7 +70,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     url = "/tags/"
     title = ""
   [[menu.main]]
-    weight = 3
+    weight = 4
     identifier = "categories"
     pre = "<i class='fa-duotone fa-solid fa-layer-group'></i>"
     post = ""
@@ -88,7 +96,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [params]
   # 网站默认主题样式 ["auto", "light", "dark"]
-  defaultTheme = "auto"
+  defaultTheme = "light"
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
   gitRepo = ""
   #  哪种哈希函数用来 SRI, 为空时表示不使用 SRI
@@ -99,7 +107,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # 网站标题，用于 Open Graph 和 Twitter Cards
   title = "Small chen"
   # 网站描述，用于 RSS, SEO, Open Graph 和 Twitter Cards
-  description = "学习笔记博客"
+  description = "小陈的博客"
   # 网站图片，用于 Open Graph 和 Twitter Cards
   images = ["/avatar.png"]
 
@@ -212,7 +220,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #  主页显示的网站标题 (支持 HTML 格式)
       title = "Small chen"
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "一个即将毕业的大学生"
+      subtitle = "记得在这杂乱的生活里，每天带点笑意。"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
@@ -223,7 +231,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.home.posts]
       enable = true
       # 主页每页显示文章数量
-      paginate = 6
+      paginate = 4
       #  被 params.page 中的 hiddenFromHomePage 替代
       # 当你没有在文章前置参数中设置 "hiddenFromHomePage" 时的默认行为
       defaultHiddenFromHomePage = false
@@ -314,9 +322,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  是否在搜索结果中隐藏一篇文章
     hiddenFromSearch = false
     #  是否使用 twemoji
-    twemoji = false
+    twemoji = true
     # 是否使用 lightgallery
-    lightgallery = false
+    lightgallery = true
     #  是否使用 ruby 扩展语法
     ruby = true
     #  是否使用 fraction 扩展语法
@@ -334,7 +342,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #  是否保持使用文章前面的静态目录
       keepStatic = false
       # 是否使侧边目录自动折叠展开
-      auto = false
+      auto = true
     #  代码配置
     [params.page.code]
       # 是否显示代码块的复制按钮

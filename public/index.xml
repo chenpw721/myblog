@@ -2,7 +2,7 @@
     <channel>
         <title>小陈の博客</title>
         <link>http://localhost:1313/</link>
-        <description>学习笔记博客</description>
+        <description>小陈的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
             <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />

@@ -63,3 +63,30 @@ scoop uninstall <软件名>
 
 `git clone https://github.com/dillonzq/LoveIt.git themes/LoveIt`
 
+## 创建一个新主题
+
+> 创建一个主题
+
+`hugo new theme my-theme`
+
+> 第一次运行，在站点的 hugo.toml 里写入
+
+`theme = "my-theme"`
+
+> 运行
+
+`hugo server`
+
+> 按住 ctrl 单击`http://localhost:1313/`
+
+## 创建文档
+
+`hugo new posts/hello-world.md`
+
+## 修改文章头
+
+> 修改根目录下的`archetypers/default.md`, 之后创建的文章就能生效
+
+## 使用 vscode 开发 hugo 主题
+
+[hugo 主题开发插件](https://gohugo.io/tools/editors/)
