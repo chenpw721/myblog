@@ -4,12 +4,12 @@
         <link>http://localhost:1313/tags/emoji/</link>
         <description>Emoji - 标签 - 小陈の博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
-            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/emoji/" rel="self" type="application/rss+xml" /><item>
-    <title>Emoji 支持</title>
-    <link>http://localhost:1313/emoji/</link>
-    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
+            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Mon, 09 Sep 2024 19:19:05 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/emoji/" rel="self" type="application/rss+xml" /><item>
+    <title>emoji 支持</title>
+    <link>http://localhost:1313/emoji%E6%94%AF%E6%8C%81/</link>
+    <pubDate>Mon, 09 Sep 2024 19:19:05 &#43;0800</pubDate>
     <author>Small chen</author>
-    <guid>http://localhost:1313/emoji/</guid>
+    <guid>http://localhost:1313/emoji%E6%94%AF%E6%8C%81/</guid>
     <description><![CDATA[<p>Emoji 可以通过多种方式在 Hugo 项目中启用。</p>]]></description>
 </item>
 </channel>

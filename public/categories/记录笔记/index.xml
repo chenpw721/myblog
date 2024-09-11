@@ -14,14 +14,6 @@
 <p><code>scoop install hugo-extended</code></p>]]></description>
 </item>
 <item>
-    <title>Emoji 支持</title>
-    <link>http://localhost:1313/emoji/</link>
-    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/emoji/</guid>
-    <description><![CDATA[<p>Emoji 可以通过多种方式在 Hugo 项目中启用。</p>]]></description>
-</item>
-<item>
     <title>git 本地远程推送</title>
     <link>http://localhost:1313/git%E6%9C%AC%E5%9C%B0%E8%BF%9C%E7%A8%8B%E6%8E%A8%E9%80%81/</link>
     <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
