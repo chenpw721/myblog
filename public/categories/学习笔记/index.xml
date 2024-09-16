@@ -4,7 +4,20 @@
         <link>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
         <description>学习笔记 - 分类 - 小陈の博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
-            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>CC2530学习笔记</title>
+    <link>http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[<blockquote>
+<p><a href="https://www.bilibili.com/video/BV1uw411A7RP?p=1&amp;vd_source=3c84cc8e3ab554e59e1e8c49f4140c19" target="_blank" rel="noopener noreffer ">课程链接</a></p>
+</blockquote>
+<h2 id="将寄存器中的某些位清0或置1">将寄存器中的某些位清0或置1</h2>
+<blockquote>
+<p>基本思路: 将要操作的位置为1，如果是与运算，则要使用到<code>~</code>操作符</p>]]></description>
+</item>
+<item>
     <title>markdown 语法</title>
     <link>http://localhost:1313/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E6%89%A9%E5%B1%95/</link>
     <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
@@ -41,15 +54,6 @@
 <blockquote>
 <p>使用 Esc 键进入</p>
 </blockquote>]]></description>
-</item>
-<item>
-    <title>物联网 py 笔记</title>
-    <link>http://localhost:1313/%E7%89%A9%E8%81%94%E7%BD%91py%E7%AC%94%E8%AE%B0/</link>
-    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/%E7%89%A9%E8%81%94%E7%BD%91py%E7%AC%94%E8%AE%B0/</guid>
-    <description><![CDATA[<h2 id="py-所需包">Py 所需包</h2>
-<h3 id="pyinstaller-库">Pyinstaller 库</h3>]]></description>
 </item>
 </channel>
 </rss>

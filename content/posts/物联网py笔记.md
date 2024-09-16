@@ -14,7 +14,7 @@ categories = ["学习笔记"]
 
 安装：`pip install pyinstaller`
 
-用法 (在命令行中输入): 
+用法 (在命令行中输入):
 
 - 可覆盖原有包：`pyinstaller -F main.py`
 - 可更改打包后程序名字为 Test：`pyinstaller -F -n "Test" main.py`

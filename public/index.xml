@@ -4,9 +4,43 @@
         <link>http://localhost:1313/</link>
         <description>小陈的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
-            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Mon, 09 Sep 2024 19:19:05 &#43;0800</lastBuildDate>
+            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>CC2530学习笔记</title>
+    <link>http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[<blockquote>
+<p><a href="https://www.bilibili.com/video/BV1uw411A7RP?p=1&amp;vd_source=3c84cc8e3ab554e59e1e8c49f4140c19" target="_blank" rel="noopener noreffer ">课程链接</a></p>
+</blockquote>
+<h2 id="将寄存器中的某些位清0或置1">将寄存器中的某些位清0或置1</h2>
+<blockquote>
+<p>基本思路: 将要操作的位置为1，如果是与运算，则要使用到<code>~</code>操作符</p>]]></description>
+</item>
+<item>
+    <title>U盘EFI分区删除教程</title>
+    <link>http://localhost:1313/u%E7%9B%98efi%E5%88%86%E5%8C%BA%E5%88%A0%E9%99%A4%E6%95%99%E7%A8%8B/</link>
+    <pubDate>Sat, 14 Sep 2024 15:08:42 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/u%E7%9B%98efi%E5%88%86%E5%8C%BA%E5%88%A0%E9%99%A4%E6%95%99%E7%A8%8B/</guid>
+    <description><![CDATA[<p>在运行窗口输入<code>powershell</code>进入终端，输入<code>diskpart</code>并按下Enter键</p>
+<p>在弹出的窗口输入<code>list disk</code> 找到和u盘内存相近的磁盘, 我的是<strong>磁盘1</strong></p>]]></description>
+</item>
+<item>
+    <title>Zigbee</title>
+    <link>http://localhost:1313/zigbee/</link>
+    <pubDate>Sat, 14 Sep 2024 09:30:17 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/zigbee/</guid>
+    <description><![CDATA[<blockquote>
+<p><a href="/ZigBee%e6%97%a0%e7%ba%bf%e7%bd%91%e7%bb%9c%e5%ae%9e%e9%aa%8c%e5%ae%9e%e8%ae%ad%e6%89%8b%e5%86%8cV3.00.pdf" rel="">zigbee 无线网络实验实训手册</a></p>
+</blockquote>
+<h2 id="必备知识">必备知识</h2>
+<p></p>]]></description>
+</item>
+<item>
     <title>emoji 支持</title>
     <link>http://localhost:1313/emoji%E6%94%AF%E6%8C%81/</link>
     <pubDate>Mon, 09 Sep 2024 19:19:05 &#43;0800</pubDate>
@@ -22,34 +56,6 @@
     <guid>http://localhost:1313/hugo-loveit/</guid>
     <description><![CDATA[<h2 id="安装-hugo">安装 hugo</h2>
 <p><code>scoop install hugo-extended</code></p>]]></description>
-</item>
-<item>
-    <title>git 本地远程推送</title>
-    <link>http://localhost:1313/git%E6%9C%AC%E5%9C%B0%E8%BF%9C%E7%A8%8B%E6%8E%A8%E9%80%81/</link>
-    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/git%E6%9C%AC%E5%9C%B0%E8%BF%9C%E7%A8%8B%E6%8E%A8%E9%80%81/</guid>
-    <description><![CDATA[<h2 id="github-本地配置">GitHub 本地配置</h2>
-<h3 id="配置本地-git-全局设置">配置本地 Git 全局设置</h3>]]></description>
-</item>
-<item>
-    <title>markdown 语法</title>
-    <link>http://localhost:1313/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E6%89%A9%E5%B1%95/</link>
-    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E6%89%A9%E5%B1%95/</guid>
-    <description><![CDATA[<blockquote>
-<p>markdown 语法网站 <a href="https://markdown.com.cn/intro.html" target="_blank" rel="noopener noreffer ">markdown</a></p>
-</blockquote>
-<h2 id="标题">标题</h2>]]></description>
-</item>
-<item>
-    <title>py 学习笔记</title>
-    <link>http://localhost:1313/py%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/py%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-    <description><![CDATA[<h2 id="字面量">字面量</h2>]]></description>
 </item>
 </channel>
 </rss>

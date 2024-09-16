@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>应用开发 - 标签 - 小陈の博客</title>
+        <link>http://localhost:1313/tags/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/</link>
+        <description>应用开发 - 标签 - 小陈の博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
+            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+    <title>CC2530学习笔记</title>
+    <link>http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[<blockquote>
+<p><a href="https://www.bilibili.com/video/BV1uw411A7RP?p=1&amp;vd_source=3c84cc8e3ab554e59e1e8c49f4140c19" target="_blank" rel="noopener noreffer ">课程链接</a></p>
+</blockquote>
+<h2 id="将寄存器中的某些位清0或置1">将寄存器中的某些位清0或置1</h2>
+<blockquote>
+<p>基本思路: 将要操作的位置为1，如果是与运算，则要使用到<code>~</code>操作符</p>]]></description>
+</item>
+</channel>
+</rss>
