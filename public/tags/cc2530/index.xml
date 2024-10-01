@@ -11,11 +11,25 @@
     <author>Small chen</author>
     <guid>http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
     <description><![CDATA[<blockquote>
-<p><a href="https://www.bilibili.com/video/BV1uw411A7RP?p=1&amp;vd_source=3c84cc8e3ab554e59e1e8c49f4140c19" target="_blank" rel="noopener noreffer ">课程链接</a></p>
-</blockquote>
-<h2 id="将寄存器中的某些位清0或置1">将寄存器中的某些位清0或置1</h2>
-<blockquote>
-<p>基本思路: 将要操作的位置为1，如果是与运算，则要使用到<code>~</code>操作符</p>]]></description>
+<p>需要使用的软件有:</p>
+<ul>
+<li>
+<p>IAR Embedded Workbench IDE</p>
+</li>
+<li>
+<p>SmartRF Flash Programmer</p>
+</li>
+</ul>
+<p>硬件:</p>
+<ul>
+<li>
+<p>一个CC Debugger仿真器、USB充电器</p>
+</li>
+<li>
+<p>蓝色zigbee智能节点盒及其充电器</p>
+</li>
+<li>
+<p>一台装有职业院校技能大赛物联网专用win10系统的PC</p>]]></description>
 </item>
 </channel>
 </rss>

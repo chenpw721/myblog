@@ -22,12 +22,10 @@ categories = ["记录笔记"]
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 # 输入Y或A，同意
 Y
-# 以下代码在无管理员权限的powershell下执行
-# 执行安装命令（默认安装在用户目录下，如需更改请执行“自定义安装目录”命令）
-iwr -useb scoop.201704.xyz | iex
 
 # 自定义安装目录（注意将目录修改为合适位置), 我的软件安装盘是E盘，GlobalScoopApps是scoop软件安装目录
 irm scoop.201704.xyz -outfile 'install.ps1'
+
 .\install.ps1 -ScoopDir 'E:\Scoop' -ScoopGlobalDir 'E:\GlobalScoopApps'
 ```
 

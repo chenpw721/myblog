@@ -7,12 +7,13 @@
         <title>CC2530学习笔记 - 小陈の博客</title><meta name="Description" content="小陈的博客"><meta property="og:url" content="http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
   <meta property="og:site_name" content="小陈の博客">
   <meta property="og:title" content="CC2530学习笔记">
-  <meta property="og:description" content=" 课程链接
-需要使用的软件有:
+  <meta property="og:description" content=" 需要使用的软件有:
 IAR Embedded Workbench IDE
 SmartRF Flash Programmer
 硬件:
-一个CC Debugger仿真器、USB充电器">
+一个CC Debugger仿真器、USB充电器
+蓝色zigbee智能节点盒及其充电器
+一台装有职业院校技能大赛物联网专用win10系统的PC">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -25,15 +26,16 @@ SmartRF Flash Programmer
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/avatar.png">
   <meta name="twitter:title" content="CC2530学习笔记">
-  <meta name="twitter:description" content=" 课程链接
-需要使用的软件有:
+  <meta name="twitter:description" content=" 需要使用的软件有:
 IAR Embedded Workbench IDE
 SmartRF Flash Programmer
 硬件:
-一个CC Debugger仿真器、USB充电器">
+一个CC Debugger仿真器、USB充电器
+蓝色zigbee智能节点盒及其充电器
+一台装有职业院校技能大赛物联网专用win10系统的PC">
       <meta name="twitter:site" content="@chenpw">
 <meta name="application-name" content="Small chen">
-<meta name="apple-mobile-web-app-title" content="Small chen"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" /><link rel="prev" href="http://localhost:1313/u%E7%9B%98efi%E5%88%86%E5%8C%BA%E5%88%A0%E9%99%A4%E6%95%99%E7%A8%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="Small chen"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" /><link rel="prev" href="http://localhost:1313/u%E7%9B%98efi%E5%88%86%E5%8C%BA%E5%88%A0%E9%99%A4%E6%95%99%E7%A8%8B/" /><link rel="next" href="http://localhost:1313/c%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -44,7 +46,7 @@ SmartRF Flash Programmer
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/"
-        },"genre": "posts","keywords": "CC2530, 应用开发","wordcount":  1350 ,
+        },"genre": "posts","keywords": "CC2530, 应用开发","wordcount":  2549 ,
         "url": "http:\/\/localhost:1313\/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/","datePublished": "2024-09-15T16:42:04+08:00","dateModified": "2024-09-15T16:42:04+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -118,8 +120,8 @@ SmartRF Flash Programmer
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">CC2530学习笔记</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Small chen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>学习笔记</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-09-15">2024-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1350 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-09-15">2024-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 2549 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -140,10 +142,10 @@ SmartRF Flash Programmer
         <li><a href="#按键去抖动">按键去抖动</a></li>
       </ul>
     </li>
+    <li><a href="#cc2530的中断系统">cc2530的中断系统</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><blockquote>
-<p><a href="https://www.bilibili.com/video/BV1uw411A7RP?p=1&amp;vd_source=3c84cc8e3ab554e59e1e8c49f4140c19" target="_blank" rel="noopener noreffer ">课程链接</a></p>
 <p>需要使用的软件有:</p>
 <ul>
 <li>
@@ -245,22 +247,39 @@ SmartRF Flash Programmer
 <p>在程序编写中，引入头文件<code>#include &lt;iocc2530.h&gt;</code></p>
 <p>与通用I/O端口相关的常用寄存器有下面4个：</p>
 <ol>
-<li>PxSEL: <strong><u>端口功能选择</u></strong>，设置端口是通用I/O还是外设功能端口。置为0，端口设置为通用I/O模式；置为1，端口设置为外设功能</li>
-<li>PxDIR: <u><strong>端口方向选择</strong></u>，作为通用I/O时，用来<em><strong>设置数据的传输方向</strong></em>。置为0，输入；置为1，输出</li>
-<li>PxINP: 作为通用输入端口时，<u><strong>选择输入模式</strong></u>是<u><em>上拉</em></u>、<u><em>下拉</em></u>还是<u><em>三态</em></u>(高电平、低电平、高阻态)。置为0，上拉/下拉；置为1，三态
+<li>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/P1%e7%ab%af%e5%8f%a3SEL&amp;DIR&amp;INP.jpg"
+        data-srcset="/img/P1%e7%ab%af%e5%8f%a3SEL&amp;DIR&amp;INP.jpg, /img/P1%e7%ab%af%e5%8f%a3SEL&amp;DIR&amp;INP.jpg 1.5x, /img/P1%e7%ab%af%e5%8f%a3SEL&amp;DIR&amp;INP.jpg 2x"
+        data-sizes="auto"
+        alt="/img/P1端口SEL&amp;DIR&amp;INP.jpg"
+        title="P1端口" /></p>
+</li>
+<li>
+<p>PxSEL: <strong><u>端口功能选择</u></strong>，设置端口是通用I/O还是外设功能端口。置为0，端口设置为通用I/O模式；置为1，端口设置为外设功能</p>
+</li>
+<li>
+<p>PxDIR: <u><strong>端口方向选择</strong></u>，作为通用I/O时，用来<em><strong>设置数据的传输方向</strong></em>。置为0，输入；置为1，输出</p>
+</li>
+<li>
+<p>PxINP: 作为通用输入端口时，<u><strong>选择输入模式</strong></u>是<u><em>上拉</em></u>、<u><em>下拉</em></u>还是<u><em>三态</em></u>(高电平、低电平、高阻态)。置为0，上拉/下拉；置为1，三态</p>
 <ol>
 <li>P0INP，对上拉/下拉控制，需要结合P2INP实现</li>
 <li><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/img/img4.png"
-        data-srcset="/img/img4.png, /img/img4.png 1.5x, /img/img4.png 2x"
+        data-src="/img/P2INP.jpg"
+        data-srcset="/img/P2INP.jpg, /img/P2INP.jpg 1.5x, /img/P2INP.jpg 2x"
         data-sizes="auto"
-        alt="/img/img4.png"
-        title="/img/img4.png" /></li>
+        alt="/img/P2INP.jpg"
+        title="/img/P2INP.jpg" /></li>
 </ol>
 </li>
-<li>Px: 数据端口，用来<strong>控制端口的输入</strong>或<strong>获取端口的输入</strong></li>
+<li>
+<p>Px: 数据端口，用来<strong>控制端口的输入</strong>或<strong>获取端口的输入</strong></p>
+</li>
 </ol>
 <p>P0SEL&amp;=~0x06;</p>
 <p>P0DIR|=0x06;</p>
@@ -290,23 +309,271 @@ SmartRF Flash Programmer
 <p>代码实例：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="n">K1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">Delay</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">K1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">uint</span> <span class="nf">Key_Check</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//按下K1为低电平，置为0；未按下K1为高电平，置为1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span><span class="p">(</span><span class="n">K1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">Delay</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">K1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div></div><div class="post-footer" id="post-footer">
+</div><h2 id="cc2530的中断系统">cc2530的中断系统</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/cc2530%e4%b8%ad%e6%96%ad%e7%b3%bb%e7%bb%9f.jpg"
+        data-srcset="/img/cc2530%e4%b8%ad%e6%96%ad%e7%b3%bb%e7%bb%9f.jpg, /img/cc2530%e4%b8%ad%e6%96%ad%e7%b3%bb%e7%bb%9f.jpg 1.5x, /img/cc2530%e4%b8%ad%e6%96%ad%e7%b3%bb%e7%bb%9f.jpg 2x"
+        data-sizes="auto"
+        alt="/img/cc2530中断系统.jpg"
+        title="cc2530的中断系统" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/cc2530%e4%b8%ad%e6%96%ad%e7%b3%bb%e7%bb%9f%e7%bb%93%e6%9e%84%e5%9b%be.jpg"
+        data-srcset="/img/cc2530%e4%b8%ad%e6%96%ad%e7%b3%bb%e7%bb%9f%e7%bb%93%e6%9e%84%e5%9b%be.jpg, /img/cc2530%e4%b8%ad%e6%96%ad%e7%b3%bb%e7%bb%9f%e7%bb%93%e6%9e%84%e5%9b%be.jpg 1.5x, /img/cc2530%e4%b8%ad%e6%96%ad%e7%b3%bb%e7%bb%9f%e7%bb%93%e6%9e%84%e5%9b%be.jpg 2x"
+        data-sizes="auto"
+        alt="/img/cc2530中断系统结构图.jpg"
+        title="cc2530中断系统的结构图" /></p>
+<dl>
+<dt>cc2530的P0、P1、P2端口中的每个引脚都具有<strong>外部中断输入功能</strong>，要使某些引脚具有外部中断功能，需要对<strong>IENx寄存器、PxIEN寄存器和PICTL寄存器</strong>进行适当的设置</dt>
+<dd>
+<p>PxIEN寄存器<strong>外部中断功能</strong></p>
+</dd>
+<dd>
+<p>PICTL寄存器<strong>端口输入信号控制</strong></p>
+</dd>
+</dl>
+<p>P0、P1和P2端口分别使用<strong>P0IF、P1IF和P2IF</strong>作为<strong>中断标志位</strong>，端口组上的任何一个引脚产生<strong>外部中断</strong>时，都会将<strong>对应端口组的中断标志为自动置位</strong></p>
+<p><strong>端口状态标志</strong>寄存器<strong>P0IFG、P1IFG和P2IFG</strong>，分别对应3个端口中隔音教的中断触发状态，当某引脚产生了<strong>设定的外部中断触发信号</strong>时，该寄存器<strong>对应的标志位会自动置位</strong></p>
+<blockquote>
+<p>外部中断标志PxIF和PxIFG必须在中断服务函数中<strong>手工清除</strong>，否则CPU会反复进入中断</p>
+<p>先清除PxIFG，再清除PxIF</p>
+</blockquote>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/%e5%a4%96%e9%83%a8%e4%b8%ad%e6%96%ad%e7%9a%84%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86.jpg"
+        data-srcset="/img/%e5%a4%96%e9%83%a8%e4%b8%ad%e6%96%ad%e7%9a%84%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86.jpg, /img/%e5%a4%96%e9%83%a8%e4%b8%ad%e6%96%ad%e7%9a%84%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86.jpg 1.5x, /img/%e5%a4%96%e9%83%a8%e4%b8%ad%e6%96%ad%e7%9a%84%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86.jpg 2x"
+        data-sizes="auto"
+        alt="/img/外部中断的工作原理.jpg"
+        title="外部中断的工作原理" /></p>
+<dl>
+<dt>外部中断相关的寄存器：</dt>
+<dd>
+<blockquote>
+<p>寄存器置0中断禁止，置1中断使能</p>
+</blockquote>
+</dd>
+<dd>
+<p>IEN1的第5位：P0IE(端口0中断使能)</p>
+</dd>
+<dd>
+<p>IEN2的第4位：P1IE(端口1中断使能),IEN2的第1位：P2IE(端口2中断使能)</p>
+</dd>
+<dd>
+<p>Px(P0&amp;P1&amp;P2)IEN寄存器和PICTL寄存器(置0上升沿触发，置1下降沿触发)</p>
+</dd>
+</dl>
+<ol>
+<li><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/IEN0%e4%b8%ad%e6%96%ad.jpg"
+        data-srcset="/img/IEN0%e4%b8%ad%e6%96%ad.jpg, /img/IEN0%e4%b8%ad%e6%96%ad.jpg 1.5x, /img/IEN0%e4%b8%ad%e6%96%ad.jpg 2x"
+        data-sizes="auto"
+        alt="/img/IEN0中断.jpg"
+        title="IEN0中断" /></li>
+<li><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/IEN1%e4%b8%ad%e6%96%ad.jpg"
+        data-srcset="/img/IEN1%e4%b8%ad%e6%96%ad.jpg, /img/IEN1%e4%b8%ad%e6%96%ad.jpg 1.5x, /img/IEN1%e4%b8%ad%e6%96%ad.jpg 2x"
+        data-sizes="auto"
+        alt="/img/IEN1中断.jpg"
+        title="IEN1中断" /></li>
+<li><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/P2IEN&amp;PICTL.jpg"
+        data-srcset="/img/P2IEN&amp;PICTL.jpg, /img/P2IEN&amp;PICTL.jpg 1.5x, /img/P2IEN&amp;PICTL.jpg 2x"
+        data-sizes="auto"
+        alt="/img/P2IEN&amp;PICTL.jpg"
+        title="P2IEN&amp;PICTL" /></li>
+<li><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/P0IEN&amp;P1IEN&amp;P2IEN%e7%ab%af%e5%8f%a3%e4%b8%ad%e6%96%ad.jpg"
+        data-srcset="/img/P0IEN&amp;P1IEN&amp;P2IEN%e7%ab%af%e5%8f%a3%e4%b8%ad%e6%96%ad.jpg, /img/P0IEN&amp;P1IEN&amp;P2IEN%e7%ab%af%e5%8f%a3%e4%b8%ad%e6%96%ad.jpg 1.5x, /img/P0IEN&amp;P1IEN&amp;P2IEN%e7%ab%af%e5%8f%a3%e4%b8%ad%e6%96%ad.jpg 2x"
+        data-sizes="auto"
+        alt="/img/P0IEN&amp;P1IEN&amp;P2IEN端口中断.jpg"
+        title="P0IEN&amp;P1IEN&amp;P2IEN端口中断" /></li>
+</ol>
+<p>例：将P1_2和P1_4设置为外部中断引脚，P1_2下降沿触发，P1_4上升沿触发，使能相关中断控制位</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">Init_INTP1</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="n">P1SEL</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="mh">0x14</span><span class="p">;</span>	<span class="c1">//P1_2和P1_4设置为通用I/O端口，
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">P1DIR</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="mh">0x14</span><span class="p">;</span>	<span class="c1">//P1_2和P1_4设置为输入模式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//CC2530芯片复位后，I/O引脚被配置成带上拉的输入模式，故上述两行代码可省略。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">PICTL</span> <span class="o">|=</span> <span class="mh">0x02</span><span class="p">;</span>	<span class="c1">//P1_2的外部中断信号设置为下降沿触发
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">PICTL</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="mh">0x04</span><span class="p">;</span>	<span class="c1">//P1_4的外部中断信号设置为上升沿触发
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">P1IEN</span> <span class="o">|=</span> <span class="mh">0x14</span><span class="p">;</span>	<span class="c1">//P1_2和P1_4使能位外部中断引脚
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">IEN2</span> <span class="o">|=</span> <span class="mh">0x10</span><span class="p">;</span>	<span class="c1">//使能P1端口外部中断
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">EA</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>			<span class="c1">//打开总中断
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">//SW2(P0_1)初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">Init_INTP0</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="n">P0SEL</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="mh">0x02</span><span class="p">;</span>	<span class="c1">//设置为I/O
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="n">P0DIR</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="mh">0x02</span><span class="p">;</span>	<span class="c1">//设置为输入
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="n">P0INP</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="mh">0x02</span><span class="p">;</span>	<span class="c1">//设置为上拉/下拉
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="n">P2INP</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="mh">0x20</span><span class="p">;</span>	<span class="c1">//设置为上拉
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="n">IEN1</span> <span class="o">|=</span> <span class="mh">0x20</span><span class="p">;</span>	<span class="c1">//设置P0端口的中断使能
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="n">P0IEN</span> <span class="o">|=</span> <span class="mh">0x02</span><span class="p">;</span>	<span class="c1">//设置P0_1这个引脚为中断使能
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="n">PICTL</span> <span class="o">|=</span> <span class="mh">0x01</span><span class="p">;</span>	<span class="c1">//设置P0端口为下降沿触发
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="n">EA</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> 		<span class="c1">//打开总中断
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//4个LED灯初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">Init_Port</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="n">P1SEL</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="mh">0x1B</span><span class="p">;</span> <span class="c1">//把P1_4、P1_3、P1_1、P1_0四个端口设置为I/O模式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">	<span class="n">P1DIR</span> <span class="o">|=</span> <span class="mh">0x1B</span><span class="p">;</span>	<span class="c1">//把4个端口设置为输出
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">	<span class="n">P1</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="mh">0x1B</span><span class="p">;</span>	<span class="c1">//4个LED灯设置为0(灭)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//中断服务函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#pragma vector = P0INT_VECTOR </span><span class="c1">//向量可以在ioCC2530.h头文件中&#34;Interrupt Vectors&#34;找
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">__interrupt</span> <span class="kt">void</span> <span class="nf">Service_INIP0</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//P0IFG
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span><span class="p">((</span><span class="n">P0IFG</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x02</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">D5</span> <span class="o">=</span> <span class="o">~</span><span class="n">D5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">P0IFG</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//手动置0；先IFG，后IF
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">P0IF</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//延时函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">Delay</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">t</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">t</span><span class="o">--</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">Init_Port</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">Init_INTP0</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">D4</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">Delay</span><span class="p">(</span><span class="mi">60000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">Delay</span><span class="p">(</span><span class="mi">60000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">D4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">Delay</span><span class="p">(</span><span class="mi">60000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">Delay</span><span class="p">(</span><span class="mi">60000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>端口组中断使能 -&gt; 端口组具体引脚中断使能 -&gt; 上升(0)、下降(1)沿触发 -&gt; 总中断使能</p>
+</blockquote>
+<p>pw</p>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -327,11 +594,12 @@ SmartRF Flash Programmer
         </section>
     </div>
 
-    <div class="post-nav"><a href="/u%E7%9B%98efi%E5%88%86%E5%8C%BA%E5%88%A0%E9%99%A4%E6%95%99%E7%A8%8B/" class="prev" rel="prev" title="U盘EFI分区删除教程"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>U盘EFI分区删除教程</a></div>
+    <div class="post-nav"><a href="/u%E7%9B%98efi%E5%88%86%E5%8C%BA%E5%88%A0%E9%99%A4%E6%95%99%E7%A8%8B/" class="prev" rel="prev" title="U盘EFI分区删除教程"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>U盘EFI分区删除教程</a>
+            <a href="/c%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" class="next" rel="next" title="C语言指针">C语言指针<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.134.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.135.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Small chen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

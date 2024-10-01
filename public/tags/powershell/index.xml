@@ -1,0 +1,38 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Powershell - 标签 - 小陈の博客</title>
+        <link>http://localhost:1313/tags/powershell/</link>
+        <description>Powershell - 标签 - 小陈の博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
+            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/powershell/" rel="self" type="application/rss+xml" /><item>
+    <title>pwsh 安装配置</title>
+    <link>http://localhost:1313/pwsh%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/pwsh%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[<h2 id="pwsh-的安装">pwsh 的安装</h2>
+<p>pwsh 的安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># 显示当前powershell版本号</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$PSVersionTable</span><span class="p">.</span><span class="py">PSVersion</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 显示当前最新的可用的版本 正常版和预览版</span>
+</span></span><span class="line"><span class="cl"><span class="n">winget</span> <span class="n">search</span> <span class="n">Microsoft</span><span class="p">.</span><span class="py">PowerShell</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 使用 Winget 安装 PowerShell</span>
+</span></span><span class="line"><span class="cl"><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Microsoft</span><span class="p">.</span><span class="py">Powershell</span> <span class="p">-</span><span class="n">-source</span> <span class="n">winget</span>
+</span></span></code></pr]]></description>
+</item>
+</channel>
+</rss>

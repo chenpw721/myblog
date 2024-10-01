@@ -4,14 +4,85 @@
         <link>http://localhost:1313/posts/</link>
         <description>所有文章 | 小陈の博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
-            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Tue, 01 Oct 2024 15:52:06 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Pwsh 安装配置</title>
+    <link>http://localhost:1313/pwsh%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Tue, 01 Oct 2024 15:52:06 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/pwsh%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[<h2 id="pwsh-的安装">pwsh 的安装</h2>
+<p>pwsh 的安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># 显示当前powershell版本号</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$PSVersionTable</span><span class="p">.</span><span class="py">PSVersion</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 显示当前最新的可用的版本 正常版和预览版</span>
+</span></span><span class="line"><span class="cl"><span class="n">winget</span> <span class="n">search</span> <span class="n">Microsoft</span><span class="p">.</span><span class="py">PowerShell</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 使用 Winget 安装 PowerShell</span>
+</span></span><span class="line"><span class="cl"><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Microsoft</span><span class="p">.</span><span class="py">Powershell</span> <span class="p">-</span><span class="n">-source</span> <span class="n">winget</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="使用-pwshpowershell7">使用 pwsh(Powershell7)</h2>
+<p>win+R 键，打开运行，输入 pwsh，即可</p>]]></description>
+</item>
+<item>
+    <title>C语言指针</title>
+    <link>http://localhost:1313/c%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/</link>
+    <pubDate>Tue, 17 Sep 2024 15:56:04 &#43;0800</pubDate>
+    <author>Small chen</author>
+    <guid>http://localhost:1313/c%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/</guid>
+    <description><![CDATA[<blockquote>
+<p><a href="https://www.bilibili.com/video/BV1bo4y1Z7xf/?spm_id_from=333.999.0.0&amp;vd_source=3c84cc8e3ab554e59e1e8c49f4140c19" target="_blank" rel="noopener noreffer ">C语言指针网课</a></p>
+</blockquote>
+<p>&amp;用于获取变量的地址，*变量定义时用于声明指针变量，</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">;</span> <span class="c1">//指针变量p指向普通变量a的地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">print</span><span class="p">(</span><span class="s">&#34;*p = &#34;</span><span class="p">,</span> <span class="o">*</span><span class="n">p</span><span class="p">);</span> <span class="c1">//解引用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">print</span><span class="p">(</span><span class="s">&#34;p = &#34;</span><span class="p">,</span> <span class="n">p</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">print</span><span class="p">(</span><span class="s">&#34;&amp;p = &#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>void类型的指针可以存储其他类型变量的地址，但不能解引用获取值</p>]]></description>
+</item>
+<item>
     <title>CC2530学习笔记</title>
     <link>http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
     <pubDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</pubDate>
     <author>Small chen</author>
     <guid>http://localhost:1313/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
     <description><![CDATA[<blockquote>
-<p><a href="https://www.bilibili.com/video/BV1uw411A7RP?p=1&amp;vd_source=3c84cc8e3ab554e59e1e8c49f4140c19" target="_blank" rel="noopener noreffer ">课程链接</a></p>
 <p>需要使用的软件有:</p>
 <ul>
 <li>
@@ -24,7 +95,13 @@
 <p>硬件:</p>
 <ul>
 <li>
-<p>一个CC Debugger仿真器、USB充电器</p>]]></description>
+<p>一个CC Debugger仿真器、USB充电器</p>
+</li>
+<li>
+<p>蓝色zigbee智能节点盒及其充电器</p>
+</li>
+<li>
+<p>一台装有职业院校技能大赛物联网专用win10系统的PC</p>]]></description>
 </item>
 <item>
     <title>U盘EFI分区删除教程</title>
@@ -36,33 +113,12 @@
 <p>在弹出的窗口输入<code>list disk</code> 找到和u盘内存相近的磁盘, 我的是<strong>磁盘1</strong></p>]]></description>
 </item>
 <item>
-    <title>Zigbee</title>
-    <link>http://localhost:1313/zigbee/</link>
-    <pubDate>Sat, 14 Sep 2024 09:30:17 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/zigbee/</guid>
-    <description><![CDATA[<blockquote>
-<p><a href="/ZigBee%e6%97%a0%e7%ba%bf%e7%bd%91%e7%bb%9c%e5%ae%9e%e9%aa%8c%e5%ae%9e%e8%ae%ad%e6%89%8b%e5%86%8cV3.00.pdf" rel="">zigbee 无线网络实验实训手册</a></p>
-</blockquote>
-<h2 id="必备知识">必备知识</h2>
-<p></p>]]></description>
-</item>
-<item>
     <title>emoji 支持</title>
     <link>http://localhost:1313/emoji%E6%94%AF%E6%8C%81/</link>
     <pubDate>Mon, 09 Sep 2024 19:19:05 &#43;0800</pubDate>
     <author>Small chen</author>
     <guid>http://localhost:1313/emoji%E6%94%AF%E6%8C%81/</guid>
     <description><![CDATA[<p>Emoji 可以通过多种方式在 Hugo 项目中启用。</p>]]></description>
-</item>
-<item>
-    <title>Hugo Loveit</title>
-    <link>http://localhost:1313/hugo-loveit/</link>
-    <pubDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/hugo-loveit/</guid>
-    <description><![CDATA[<h2 id="安装-hugo">安装 hugo</h2>
-<p><code>scoop install hugo-extended</code></p>]]></description>
 </item>
 </channel>
 </rss>

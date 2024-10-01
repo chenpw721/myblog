@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-	<meta name="generator" content="Hugo 0.134.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.135.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -101,13 +101,91 @@
         alt="/avatar.png"
         title="/avatar.png" /></a></div><h1 class="home-title">Small chen</h1><div class="home-subtitle"><div id="id-3" class="typeit"></div></div><div class="links"><a href="https://github.com/chenpw721" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a><a href="https://gitee.com/ikun_16_0" title="Gitee" target="_blank" rel="noopener noreffer me"><i class="fab fa-glide" aria-hidden="true"></i></a><a href="https://twitter.com/chenpw" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="https://facebook.com/profile.php?id=61565547091697" title="facebook" target="_blank" rel="noopener noreffer me"><i class="fab fa-facebook fa-fw" aria-hidden="true"></i></a><a href="https://gitlab.com/chenpw721" title="GitLab" target="_blank" rel="noopener noreffer me"><i class="fab fa-gitlab fa-fw" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCPLbQUP6CyWAxU2Aayfxuag" title="YouTube" target="_blank" rel="noopener noreffer me"><i class="fab fa-youtube fa-fw" aria-hidden="true"></i></a><a href="https://freecodecamp.org/fcc83e32d61-c434-4551-b06d-49ae8790b455" title="freeCodeCamp" target="_blank" rel="noopener noreffer me"><i class="fab fa-free-code-camp fa-fw" aria-hidden="true"></i></a><a href="https://stackoverflow.com/users/22118730" title="Stack Overflow" target="_blank" rel="noopener noreffer me"><i class="fab fa-stack-overflow fa-fw" aria-hidden="true"></i></a><a href="https://weibo.com/u/7891561431" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="https://steamcommunity.com/profiles/76561199583492914" title="Steam" target="_blank" rel="noopener noreffer me"><i class="fab fa-steam fa-fw" aria-hidden="true"></i></a><a href="https://www.zhihu.com/people/wo-wo-78-84" title="知乎" target="_blank" rel="noopener noreffer me"><i data-svg-src="/lib/simple-icons/icons/zhihu.min.svg" aria-hidden="true"></i></a><a href="https://space.bilibili.com/437672673?spm_id_from=333.1007.0.0" title="bilibili" target="_blank" rel="noopener noreffer me"><i data-svg-src="/lib/simple-icons/icons/bilibili.min.svg" aria-hidden="true"></i></a><a href="mailto:1002464042@qq.com" title="Email" rel="me"><i class="far fa-envelope fa-fw" aria-hidden="true"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/pwsh%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">Pwsh 安装配置</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Small chen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2024-10-01">2024-10-01</time></span></div><div class="content"><h2 id="pwsh-的安装">pwsh 的安装</h2>
+<p>pwsh 的安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># 显示当前powershell版本号</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$PSVersionTable</span><span class="p">.</span><span class="py">PSVersion</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 显示当前最新的可用的版本 正常版和预览版</span>
+</span></span><span class="line"><span class="cl"><span class="n">winget</span> <span class="n">search</span> <span class="n">Microsoft</span><span class="p">.</span><span class="py">PowerShell</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 使用 Winget 安装 PowerShell</span>
+</span></span><span class="line"><span class="cl"><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Microsoft</span><span class="p">.</span><span class="py">Powershell</span> <span class="p">-</span><span class="n">-source</span> <span class="n">winget</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="使用-pwshpowershell7">使用 pwsh(Powershell7)</h2>
+<p>win+R 键，打开运行，输入 pwsh，即可</p></div><div class="post-footer">
+        <a href="/pwsh%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">阅读全文</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/c%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/">C语言指针</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Small chen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2024-09-17">2024-09-17</time></span></div><div class="content"><blockquote>
+<p><a href="https://www.bilibili.com/video/BV1bo4y1Z7xf/?spm_id_from=333.999.0.0&amp;vd_source=3c84cc8e3ab554e59e1e8c49f4140c19" target="_blank" rel="noopener noreffer ">C语言指针网课</a></p>
+</blockquote>
+<p>&amp;用于获取变量的地址，*变量定义时用于声明指针变量，</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">;</span> <span class="c1">//指针变量p指向普通变量a的地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">print</span><span class="p">(</span><span class="s">&#34;*p = &#34;</span><span class="p">,</span> <span class="o">*</span><span class="n">p</span><span class="p">);</span> <span class="c1">//解引用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">print</span><span class="p">(</span><span class="s">&#34;p = &#34;</span><span class="p">,</span> <span class="n">p</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">print</span><span class="p">(</span><span class="s">&#34;&amp;p = &#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>void类型的指针可以存储其他类型变量的地址，但不能解引用获取值</p></div><div class="post-footer">
+        <a href="/c%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/">阅读全文</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">CC2530学习笔记</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Small chen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2024-09-15">2024-09-15</time></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>学习笔记</a></span></div><div class="content"><blockquote>
-<p><a href="https://www.bilibili.com/video/BV1uw411A7RP?p=1&amp;vd_source=3c84cc8e3ab554e59e1e8c49f4140c19" target="_blank" rel="noopener noreffer ">课程链接</a></p>
-</blockquote>
-<h2 id="将寄存器中的某些位清0或置1">将寄存器中的某些位清0或置1</h2>
-<blockquote>
-<p>基本思路: 将要操作的位置为1，如果是与运算，则要使用到<code>~</code>操作符</p></div><div class="post-footer">
+<p>需要使用的软件有:</p>
+<ul>
+<li>
+<p>IAR Embedded Workbench IDE</p>
+</li>
+<li>
+<p>SmartRF Flash Programmer</p>
+</li>
+</ul>
+<p>硬件:</p>
+<ul>
+<li>
+<p>一个CC Debugger仿真器、USB充电器</p>
+</li>
+<li>
+<p>蓝色zigbee智能节点盒及其充电器</p>
+</li>
+<li>
+<p>一台装有职业院校技能大赛物联网专用win10系统的PC</p></div><div class="post-footer">
         <a href="/cc2530%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">阅读全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cc2530/">CC2530</a>,&nbsp;<a href="/tags/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/">应用开发</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
@@ -115,26 +193,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Small chen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2024-09-14">2024-09-14</time></span></div><div class="content"><p>在运行窗口输入<code>powershell</code>进入终端，输入<code>diskpart</code>并按下Enter键</p>
 <p>在弹出的窗口输入<code>list disk</code> 找到和u盘内存相近的磁盘, 我的是<strong>磁盘1</strong></p></div><div class="post-footer">
         <a href="/u%E7%9B%98efi%E5%88%86%E5%8C%BA%E5%88%A0%E9%99%A4%E6%95%99%E7%A8%8B/">阅读全文</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/zigbee/">Zigbee</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Small chen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2024-09-14">2024-09-14</time></span></div><div class="content"><blockquote>
-<p><a href="/ZigBee%e6%97%a0%e7%ba%bf%e7%bd%91%e7%bb%9c%e5%ae%9e%e9%aa%8c%e5%ae%9e%e8%ae%ad%e6%89%8b%e5%86%8cV3.00.pdf" rel="">zigbee 无线网络实验实训手册</a></p>
-</blockquote>
-<h2 id="必备知识">必备知识</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/img1.png"
-        data-srcset="/img/img1.png, /img/img1.png 1.5x, /img/img1.png 2x"
-        data-sizes="auto"
-        alt="/img/img1.png"
-        title="/img/img1.png" /></p></div><div class="post-footer">
-        <a href="/zigbee/">阅读全文</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/emoji%E6%94%AF%E6%8C%81/">emoji 支持</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Small chen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2024-09-09">2024-09-09</time></span>&nbsp;<span class="post-category">收录于 <a href="/categories/emoji/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Emoji</a></span></div><div class="content"><p>Emoji 可以通过多种方式在 Hugo 项目中启用。</p></div><div class="post-footer">
-        <a href="/emoji%E6%94%AF%E6%8C%81/">阅读全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/emoji/">Emoji</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -153,7 +211,7 @@
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.134.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.135.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Small chen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
