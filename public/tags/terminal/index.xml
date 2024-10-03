@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Terminal - 标签 - 小陈の博客</title>
+        <link>http://localhost:1313/tags/terminal/</link>
+        <description>Terminal - 标签 - 小陈の博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (小 陈)</managingEditor>
+            <webMaster>1002464042@qq.com (小 陈)</webMaster><lastBuildDate>Thu, 03 Oct 2024 19:43:23 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/terminal/" rel="self" type="application/rss+xml" /><item>
+    <title>Nushell安装配置</title>
+    <link>http://localhost:1313/nushell%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Thu, 03 Oct 2024 19:43:23 &#43;0800</pubDate>
+    <author>小 陈</author>
+    <guid>http://localhost:1313/nushell%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[<blockquote>
+<p>windows11使用wezterm+nushell+starship</p>
+</blockquote>
+<h2 id="wezterm">wezterm</h2>
+<p><a href="https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-20240203-110809-5046fc22-setup.exe" target="_blank" rel="noopener noreffer ">wezterm windows下载地址</a></p>
+<p>在<code>C:\Users\username\.wezterm.lua</code>里添加：</p>]]></description>
+</item>
+</channel>
+</rss>

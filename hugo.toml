@@ -36,7 +36,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # 作者配置
 [author]
-  name = "Small chen"
+  name = "小 陈"
   email = "1002464042@qq.com"
   link = ""
 
@@ -113,7 +113,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  日期格式
   dateFormat = "2006-01-02"
   # 网站标题，用于 Open Graph 和 Twitter Cards
-  title = "Small chen"
+  title = "小 陈"
   # 网站描述，用于 RSS, SEO, Open Graph 和 Twitter Cards
   description = "小陈的博客"
   # 网站图片，用于 Open Graph 和 Twitter Cards
@@ -181,7 +181,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  应用图标配置
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题，覆盖默认标题
-    title = "Small chen"
+    title = "小 陈"
     # 是否隐藏网站图标资源链接
     noFavicon = false
     # 更现代的 SVG 网站图标，可替代旧的 .png 和 .ico 文件
@@ -227,7 +227,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # 主页显示头像的 URL
       avatarURL = "/avatar.png"
       #  主页显示的网站标题 (支持 HTML 格式)
-      title = "Small chen"
+      title = "小 陈"
       # 主页显示的网站副标题 (允许 HTML 格式)
       subtitle = "记得在这杂乱的生活里，每天带点笑意。"
       # 是否为副标题显示打字机动画

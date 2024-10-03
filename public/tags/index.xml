@@ -3,12 +3,28 @@
         <title>Tags - 标签 - 小陈の博客</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - 标签 - 小陈の博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
-            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (小 陈)</managingEditor>
+            <webMaster>1002464042@qq.com (小 陈)</webMaster><lastBuildDate>Thu, 03 Oct 2024 19:43:23 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Terminal</title>
+    <link>http://localhost:1313/tags/terminal/</link>
+    <pubDate>Thu, 03 Oct 2024 19:43:23 &#43;0800</pubDate>
+    <author>小 陈</author>
+    <guid>http://localhost:1313/tags/terminal/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Windows</title>
+    <link>http://localhost:1313/tags/windows/</link>
+    <pubDate>Thu, 03 Oct 2024 19:43:23 &#43;0800</pubDate>
+    <author>小 陈</author>
+    <guid>http://localhost:1313/tags/windows/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>CC2530</title>
     <link>http://localhost:1313/tags/cc2530/</link>
     <pubDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</pubDate>
-    <author>Small chen</author>
+    <author>小 陈</author>
     <guid>http://localhost:1313/tags/cc2530/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -16,7 +32,7 @@
     <title>应用开发</title>
     <link>http://localhost:1313/tags/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/</link>
     <pubDate>Sun, 15 Sep 2024 16:42:04 &#43;0800</pubDate>
-    <author>Small chen</author>
+    <author>小 陈</author>
     <guid>http://localhost:1313/tags/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -24,24 +40,8 @@
     <title>Emoji</title>
     <link>http://localhost:1313/tags/emoji/</link>
     <pubDate>Mon, 09 Sep 2024 19:19:05 &#43;0800</pubDate>
-    <author>Small chen</author>
+    <author>小 陈</author>
     <guid>http://localhost:1313/tags/emoji/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Hugo</title>
-    <link>http://localhost:1313/tags/hugo/</link>
-    <pubDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/tags/hugo/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Loveit</title>
-    <link>http://localhost:1313/tags/loveit/</link>
-    <pubDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/tags/loveit/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

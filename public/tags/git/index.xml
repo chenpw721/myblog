@@ -3,12 +3,12 @@
         <title>Git - 标签 - 小陈の博客</title>
         <link>http://localhost:1313/tags/git/</link>
         <description>Git - 标签 - 小陈の博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
-            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/git/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (小 陈)</managingEditor>
+            <webMaster>1002464042@qq.com (小 陈)</webMaster><lastBuildDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/git/" rel="self" type="application/rss+xml" /><item>
     <title>git 本地远程推送</title>
     <link>http://localhost:1313/git%E6%9C%AC%E5%9C%B0%E8%BF%9C%E7%A8%8B%E6%8E%A8%E9%80%81/</link>
     <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
+    <author>小 陈</author>
     <guid>http://localhost:1313/git%E6%9C%AC%E5%9C%B0%E8%BF%9C%E7%A8%8B%E6%8E%A8%E9%80%81/</guid>
     <description><![CDATA[<h2 id="github-本地配置">GitHub 本地配置</h2>
 <h3 id="配置本地-git-全局设置">配置本地 Git 全局设置</h3>]]></description>

@@ -3,12 +3,25 @@
         <title>记录笔记 - 分类 - 小陈の博客</title>
         <link>http://localhost:1313/categories/%E8%AE%B0%E5%BD%95%E7%AC%94%E8%AE%B0/</link>
         <description>记录笔记 - 分类 - 小陈の博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (Small chen)</managingEditor>
-            <webMaster>1002464042@qq.com (Small chen)</webMaster><lastBuildDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E8%AE%B0%E5%BD%95%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1002464042@qq.com (小 陈)</managingEditor>
+            <webMaster>1002464042@qq.com (小 陈)</webMaster><lastBuildDate>Thu, 03 Oct 2024 19:43:23 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E8%AE%B0%E5%BD%95%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>Nushell安装配置</title>
+    <link>http://localhost:1313/nushell%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Thu, 03 Oct 2024 19:43:23 &#43;0800</pubDate>
+    <author>小 陈</author>
+    <guid>http://localhost:1313/nushell%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[<blockquote>
+<p>windows11使用wezterm+nushell+starship</p>
+</blockquote>
+<h2 id="wezterm">wezterm</h2>
+<p><a href="https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-20240203-110809-5046fc22-setup.exe" target="_blank" rel="noopener noreffer ">wezterm windows下载地址</a></p>
+<p>在<code>C:\Users\username\.wezterm.lua</code>里添加：</p>]]></description>
+</item>
+<item>
     <title>Hugo Loveit</title>
     <link>http://localhost:1313/hugo-loveit/</link>
     <pubDate>Sat, 07 Sep 2024 21:44:02 &#43;0800</pubDate>
-    <author>Small chen</author>
+    <author>小 陈</author>
     <guid>http://localhost:1313/hugo-loveit/</guid>
     <description><![CDATA[<h2 id="安装-hugo">安装 hugo</h2>
 <p><code>scoop install hugo-extended</code></p>]]></description>
@@ -17,7 +30,7 @@
     <title>git 本地远程推送</title>
     <link>http://localhost:1313/git%E6%9C%AC%E5%9C%B0%E8%BF%9C%E7%A8%8B%E6%8E%A8%E9%80%81/</link>
     <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
+    <author>小 陈</author>
     <guid>http://localhost:1313/git%E6%9C%AC%E5%9C%B0%E8%BF%9C%E7%A8%8B%E6%8E%A8%E9%80%81/</guid>
     <description><![CDATA[<h2 id="github-本地配置">GitHub 本地配置</h2>
 <h3 id="配置本地-git-全局设置">配置本地 Git 全局设置</h3>]]></description>
@@ -26,7 +39,7 @@
     <title>ssh 使用教程</title>
     <link>http://localhost:1313/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
     <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
+    <author>小 陈</author>
     <guid>http://localhost:1313/ssh%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
     <description><![CDATA[<h2 id="ssh-密码登录">SSH 密码登录</h2>
 <p><code>ssh root@172.16.124.24 #用户名@主机名</code></p>]]></description>
@@ -35,7 +48,7 @@
     <title>wsl2 安装配置</title>
     <link>http://localhost:1313/wsl2%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
+    <author>小 陈</author>
     <guid>http://localhost:1313/wsl2%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
     <description><![CDATA[<h2 id="安装-wsl2">安装 WSL2</h2>
 <ul>
@@ -51,18 +64,6 @@
 <li>启动 Hyper-V</li>
 </ul>
 <p>Windows+R 键，调出运行，键入 control，进入控制面板，进入程序，打开启动或关闭 Windows 功能，勾选 Hyper-V，重启</p>]]></description>
-</item>
-<item>
-    <title>服务器实训</title>
-    <link>http://localhost:1313/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E8%AE%AD/</link>
-    <pubDate>Fri, 06 Sep 2024 21:48:59 &#43;0800</pubDate>
-    <author>Small chen</author>
-    <guid>http://localhost:1313/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E8%AE%AD/</guid>
-    <description><![CDATA[<blockquote>
-<p>这是大学实训 linux 服务与配置用到的操作步骤
-mysql 操作基于 Ubuntu 20.04, 其他操作基于 CentOS 7</p>
-</blockquote>
-<h2 id="实验配置">实验配置</h2>]]></description>
 </item>
 </channel>
 </rss>
