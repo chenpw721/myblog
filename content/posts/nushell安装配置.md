@@ -7,7 +7,7 @@ categories = ["记录笔记"]
 +++
 
 > windows11使用wezterm+nushell+starship
-
+> 
 > 安装字体[JetBrains Mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip)
 
 ## wezterm
@@ -52,6 +52,7 @@ alias vim = nvim
 [wezterm使用配置](https://github.com/KevinSilvester/wezterm-config.git)
 
 > super -> alt
+> 
 > super_rev -> ctrl+alt
 
 ### 窗格
